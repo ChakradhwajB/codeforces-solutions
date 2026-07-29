@@ -1,0 +1,25 @@
+# Source: https://usaco.guide/general/io
+ 
+t = int(input())
+ 
+for i in range(t):
+    n = int(input())
+    ski = [int(x) for x in input().split()]
+    movie = [int(x) for x in input().split()]
+    game = [int(x) for x in input().split()]
+    ski_top = sorted(enumerate(ski), key=lambda x: x[1], reverse=True)[:3]
+    movie_top = sorted(enumerate(movie), key=lambda x: x[1], reverse=True)[:3]
+    game_top = sorted(enumerate(game), key=lambda x: x[1], reverse=True)[:3]
+    max_friends = 0
+    for i, val_ski in ski_top:
+            for j, val_movie in movie_top:
+                for k, val_game in game_top:
+                    
+                    if i != j and i != k and j != k:
+                        current_sum = val_ski + val_movie + val_game
+                        if current_sum > max_friends:
+                            max_friends = current_sum
+    print(max_friends)
+    
+ 
+ 
