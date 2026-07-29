@@ -1,0 +1,35 @@
+t = int(input())
+for _ in range(t):
+    n, m = map(int, input().split())
+    arr = [int(x) for x in input().split()]
+    
+    pref = [0] * (len(arr) + 1)
+    for i in range(len(arr)):
+        pref[i + 1] = pref[i] + arr[i]
+        
+ 
+    sorted_posts = sorted(set([int(x) for x in input().split()]))
+ 
+    
+    maximum = 0
+    last_idx = 0
+    
+ 
+    for post in sorted_posts:
+        block_sum = pref[post] - pref[last_idx]
+        if block_sum < 0:
+            maximum -= block_sum
+        else:
+            maximum += block_sum
+        last_idx = post
+ 
+    remainder_sum = pref[n] - pref[last_idx]
+    maximum += remainder_sum
+    
+    print(maximum)
+ 
+ 
+ 
+    
+ 
+    
