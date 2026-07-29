@@ -1,0 +1,32 @@
+t = int(input())
+ 
+ 
+for _ in range(t):
+ 
+    def solve():
+        n = int(input())
+ 
+        arr = [int(x) for x in input().split()]
+        count = arr[0]-1
+        arr[0] = 1
+        for i in range(n):
+            if i == 0 or i == n:
+                pass
+            else:
+                if arr[i]>arr[i-1]:
+                    count += arr[i]-(arr[i-1]+1)
+                    arr[i] -= arr[i]-(arr[i-1]+1)
+                    #print(arr)
+                else:
+                    #print(arr)
+                    #print(count,arr[i-1] - arr[i] + 1)
+                    if count >= arr[i-1] - arr[i] + 1:
+                        count -= arr[i-1] - arr[i] + 1
+                        arr[i] += arr[i-1] - arr[i] + 1
+                    else:
+                        return False
+        return True
+    if solve() == False:
+        print("NO")
+    else:
+        print("YES")
