@@ -1,0 +1,21 @@
+t = int(input())
+ 
+for _ in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    
+    possible = True
+    current_prefix_sum = 0
+    
+    for i in range(n):
+        diff = b[i] - a[i]
+        current_prefix_sum += diff
+        if current_prefix_sum < 0:
+            possible = False
+            break
+            
+    if possible:
+        print("YES")
+    else:
+        print("NO")
