@@ -1,0 +1,52 @@
+ 
+import bisect
+import sys
+ 
+ 
+input = sys.stdin.readline
+ 
+ 
+n,k = map(int, input().split())
+ 
+arr = [int(x) for x in input().split()] 
+ 
+ 
+curr = [int(x) for x in input().split()] 
+ 
+ 
+# The bounds of your search space.
+# High should be an impossibly large valid answer (e.g., 10**18)
+low = 0
+high = 10**18
+best_ans = 0
+ 
+def check(mid):
+    offset = 0
+    needed_amount = [mid*x for x in arr]
+ 
+    for i in range(n):
+        if curr[i] >= needed_amount[i]:
+            pass
+        else:
+            needed = needed_amount[i] - curr[i]
+            if offset + needed <= k:
+                offset+=needed
+            else:
+                return False
+    return True
+ 
+while low <= high:
+    mid = (low + high) // 2
+    
+    if check(mid):
+ 
+        best_ans = mid
+ 
+        low = mid + 1
+        
+    else:
+       
+        high = mid - 1
+ 
+ 
+print(high)
