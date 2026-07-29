@@ -6,7 +6,7 @@
 
 | Total Problems | Topics |
 |---|---|
-| 43 | 18 |
+| 53 | 18 |
 
 ---
 
@@ -15,20 +15,20 @@
 - [binary search](#binary-search) (11)
 - [bitmasks](#bitmasks) (1)
 - [brute force](#brute-force) (4)
-- [constructive algorithms](#constructive-algorithms) (5)
-- [data structures](#data-structures) (6)
-- [dfs and similar](#dfs-and-similar) (2)
-- [dp](#dp) (9)
-- [dsu](#dsu) (1)
-- [games](#games) (1)
+- [constructive algorithms](#constructive-algorithms) (10)
+- [data structures](#data-structures) (7)
+- [dfs and similar](#dfs-and-similar) (3)
+- [dp](#dp) (11)
+- [dsu](#dsu) (2)
+- [games](#games) (2)
 - [geometry](#geometry) (1)
 - [graphs](#graphs) (1)
-- [greedy](#greedy) (23)
-- [implementation](#implementation) (12)
-- [math](#math) (17)
-- [number theory](#number-theory) (3)
-- [sortings](#sortings) (9)
-- [strings](#strings) (4)
+- [greedy](#greedy) (29)
+- [implementation](#implementation) (15)
+- [math](#math) (22)
+- [number theory](#number-theory) (6)
+- [sortings](#sortings) (12)
+- [strings](#strings) (6)
 - [two pointers](#two-pointers) (10)
 
 ---
@@ -68,11 +68,16 @@
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 1672C | [Unequal Array](https://codeforces.com/contest/1672/problem/C) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1672/C%20-%20Unequal%20Array/solution.txt) |
 | 1793C | [Dora and Search](https://codeforces.com/contest/1793/problem/C) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1793/C%20-%20Dora%20and%20Search/solution.txt) |
 | 1846D | [Rudolph and Christmas Tree](https://codeforces.com/contest/1846/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1846/D%20-%20Rudolph%20and%20Christmas%20Tree/solution.txt) |
 | 1909B | [Make Almost Equal With Mod](https://codeforces.com/contest/1909/problem/B) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1909/B%20-%20Make%20Almost%20Equal%20With%20Mod/solution.txt) |
 | 2185A | [Perfect Root](https://codeforces.com/contest/2185/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/A%20-%20Perfect%20Root/solution.txt) |
 | 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.txt) |
+| 2244C | [Stepan and Permutation](https://codeforces.com/contest/2244/problem/C) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/C%20-%20Stepan%20and%20Permutation/solution.txt) |
+| 2244D | [Yaroslav and Productivity](https://codeforces.com/contest/2244/problem/D) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/D%20-%20Yaroslav%20and%20Productivity/solution.txt) |
+| 2246A | [farmpiggie and Subset Sum](https://codeforces.com/contest/2246/problem/A) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2246/A%20-%20farmpiggie%20and%20Subset%20Sum/solution.txt) |
+| 2246B | [ezraft and Array](https://codeforces.com/contest/2246/problem/B) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2246/B%20-%20ezraft%20and%20Array/solution.txt) |
 
 ### data structures
 
@@ -84,6 +89,7 @@
 | 1793C | [Dora and Search](https://codeforces.com/contest/1793/problem/C) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1793/C%20-%20Dora%20and%20Search/solution.txt) |
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.txt) |
 | 2226C | [Mental Monumental (Easy Version)](https://codeforces.com/contest/2226/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2226/C%20-%20Mental%20Monumental%20(Easy%20Version)/solution.txt) |
+| 2242B | [Predominant Frequency Division](https://codeforces.com/contest/2242/problem/B) | 1000 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2242/B%20-%20Predominant%20Frequency%20Division/solution.txt) |
 
 ### dfs and similar
 
@@ -91,6 +97,7 @@
 |---|---------|------------|----------|
 | 1167C | [News Distribution](https://codeforces.com/contest/1167/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1167/C%20-%20News%20Distribution/solution.txt) |
 | 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.txt) |
+| 2244C | [Stepan and Permutation](https://codeforces.com/contest/2244/problem/C) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/C%20-%20Stepan%20and%20Permutation/solution.txt) |
 
 ### dp
 
@@ -105,18 +112,22 @@
 | 1914D | [Three Activities](https://codeforces.com/contest/1914/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1914/D%20-%20Three%20Activities/solution.txt) |
 | 2195C | [Dice Roll Sequence](https://codeforces.com/contest/2195/problem/C) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2195/C%20-%20Dice%20Roll%20Sequence/solution.txt) |
 | 2241D | [An Alternative Way](https://codeforces.com/contest/2241/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/D%20-%20An%20Alternative%20Way/solution.txt) |
+| 2244A | [Iskander and Drawings](https://codeforces.com/contest/2244/problem/A) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/A%20-%20Iskander%20and%20Drawings/solution.txt) |
+| 2244D | [Yaroslav and Productivity](https://codeforces.com/contest/2244/problem/D) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/D%20-%20Yaroslav%20and%20Productivity/solution.txt) |
 
 ### dsu
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1167C | [News Distribution](https://codeforces.com/contest/1167/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1167/C%20-%20News%20Distribution/solution.txt) |
+| 2244C | [Stepan and Permutation](https://codeforces.com/contest/2244/problem/C) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/C%20-%20Stepan%20and%20Permutation/solution.txt) |
 
 ### games
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1931E | [Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1931/E%20-%20Anna%20and%20the%20Valentine's%20Day%20Gift/solution.txt) |
+| 2244A | [Iskander and Drawings](https://codeforces.com/contest/2244/problem/A) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/A%20-%20Iskander%20and%20Drawings/solution.txt) |
 
 ### geometry
 
@@ -140,6 +151,7 @@
 | 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.txt) |
 | 1201C | [Maximum Median](https://codeforces.com/contest/1201/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1201/C%20-%20Maximum%20Median/solution.txt) |
 | 1526C2 | [Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | 1600 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1526/C2%20-%20Potions%20(Hard%20Version)/solution.txt) |
+| 1672C | [Unequal Array](https://codeforces.com/contest/1672/problem/C) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1672/C%20-%20Unequal%20Array/solution.txt) |
 | 1742E | [Scuza](https://codeforces.com/contest/1742/problem/E) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1742/E%20-%20Scuza/solution.txt) |
 | 1790D | [Matryoshkas](https://codeforces.com/contest/1790/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1790/D%20-%20Matryoshkas/solution.txt) |
 | 1826D | [Running Miles](https://codeforces.com/contest/1826/problem/D) | 1700 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1826/D%20-%20Running%20Miles/solution.txt) |
@@ -157,6 +169,11 @@
 | 2241A | [Divide and Conquer](https://codeforces.com/contest/2241/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/A%20-%20Divide%20and%20Conquer/solution.txt) |
 | 2241C | [RemovevomeR](https://codeforces.com/contest/2241/problem/C) | 1000 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/C%20-%20RemovevomeR/solution.txt) |
 | 2241D | [An Alternative Way](https://codeforces.com/contest/2241/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/D%20-%20An%20Alternative%20Way/solution.txt) |
+| 2242B | [Predominant Frequency Division](https://codeforces.com/contest/2242/problem/B) | 1000 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2242/B%20-%20Predominant%20Frequency%20Division/solution.txt) |
+| 2244A | [Iskander and Drawings](https://codeforces.com/contest/2244/problem/A) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/A%20-%20Iskander%20and%20Drawings/solution.txt) |
+| 2244B | [Nikita and Books](https://codeforces.com/contest/2244/problem/B) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/B%20-%20Nikita%20and%20Books/solution.txt) |
+| 2244C | [Stepan and Permutation](https://codeforces.com/contest/2244/problem/C) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/C%20-%20Stepan%20and%20Permutation/solution.txt) |
+| 2244D | [Yaroslav and Productivity](https://codeforces.com/contest/2244/problem/D) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/D%20-%20Yaroslav%20and%20Productivity/solution.txt) |
 
 ### implementation
 
@@ -170,10 +187,13 @@
 | 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.txt) |
 | 670D2 | [Magic Powder - 2](https://codeforces.com/contest/670/problem/D2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/670/D2%20-%20Magic%20Powder%20-%202/solution.txt) |
 | 702C | [Cellular Network](https://codeforces.com/contest/702/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/702/C%20-%20Cellular%20Network/solution.txt) |
+| 1672C | [Unequal Array](https://codeforces.com/contest/1672/problem/C) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1672/C%20-%20Unequal%20Array/solution.txt) |
 | 1832C | [Contrast Value](https://codeforces.com/contest/1832/problem/C) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1832/C%20-%20Contrast%20Value/solution.txt) |
 | 1914D | [Three Activities](https://codeforces.com/contest/1914/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1914/D%20-%20Three%20Activities/solution.txt) |
 | 2185C | [Shifted MEX](https://codeforces.com/contest/2185/problem/C) | 900 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/C%20-%20Shifted%20MEX/solution.txt) |
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.txt) |
+| 2227A | [Koshary](https://codeforces.com/contest/2227/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2227/A%20-%20Koshary/solution.txt) |
+| 2242B | [Predominant Frequency Division](https://codeforces.com/contest/2242/problem/B) | 1000 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2242/B%20-%20Predominant%20Frequency%20Division/solution.txt) |
 
 ### math
 
@@ -190,12 +210,17 @@
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.txt) |
 | 2195A | [Sieve of Erato67henes](https://codeforces.com/contest/2195/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2195/A%20-%20Sieve%20of%20Erato67henes/solution.txt) |
 | 2226C | [Mental Monumental (Easy Version)](https://codeforces.com/contest/2226/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2226/C%20-%20Mental%20Monumental%20(Easy%20Version)/solution.txt) |
+| 2227A | [Koshary](https://codeforces.com/contest/2227/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2227/A%20-%20Koshary/solution.txt) |
 | 2232C2 | [Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2232/C2%20-%20Seating%20Arrangement%20(Hard%20Version)/solution.txt) |
 | 2236A | [Games on the Train](https://codeforces.com/contest/2236/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/A%20-%20Games%20on%20the%20Train/solution.txt) |
 | 2236B | [Tatar TV Show](https://codeforces.com/contest/2236/problem/B) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/B%20-%20Tatar%20TV%20Show/solution.txt) |
 | 2241A | [Divide and Conquer](https://codeforces.com/contest/2241/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/A%20-%20Divide%20and%20Conquer/solution.txt) |
 | 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.txt) |
 | 2241D | [An Alternative Way](https://codeforces.com/contest/2241/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/D%20-%20An%20Alternative%20Way/solution.txt) |
+| 2242B | [Predominant Frequency Division](https://codeforces.com/contest/2242/problem/B) | 1000 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2242/B%20-%20Predominant%20Frequency%20Division/solution.txt) |
+| 2244B | [Nikita and Books](https://codeforces.com/contest/2244/problem/B) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/B%20-%20Nikita%20and%20Books/solution.txt) |
+| 2244C | [Stepan and Permutation](https://codeforces.com/contest/2244/problem/C) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/C%20-%20Stepan%20and%20Permutation/solution.txt) |
+| 2244D | [Yaroslav and Productivity](https://codeforces.com/contest/2244/problem/D) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/D%20-%20Yaroslav%20and%20Productivity/solution.txt) |
 
 ### number theory
 
@@ -204,6 +229,9 @@
 | 1909B | [Make Almost Equal With Mod](https://codeforces.com/contest/1909/problem/B) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1909/B%20-%20Make%20Almost%20Equal%20With%20Mod/solution.txt) |
 | 2195A | [Sieve of Erato67henes](https://codeforces.com/contest/2195/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2195/A%20-%20Sieve%20of%20Erato67henes/solution.txt) |
 | 2241A | [Divide and Conquer](https://codeforces.com/contest/2241/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/A%20-%20Divide%20and%20Conquer/solution.txt) |
+| 2244C | [Stepan and Permutation](https://codeforces.com/contest/2244/problem/C) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/C%20-%20Stepan%20and%20Permutation/solution.txt) |
+| 2244D | [Yaroslav and Productivity](https://codeforces.com/contest/2244/problem/D) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/D%20-%20Yaroslav%20and%20Productivity/solution.txt) |
+| 2246B | [ezraft and Array](https://codeforces.com/contest/2246/problem/B) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2246/B%20-%20ezraft%20and%20Array/solution.txt) |
 
 ### sortings
 
@@ -218,6 +246,9 @@
 | 1914D | [Three Activities](https://codeforces.com/contest/1914/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1914/D%20-%20Three%20Activities/solution.txt) |
 | 1931E | [Anna and the Valentine's Day Gift](https://codeforces.com/contest/1931/problem/E) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1931/E%20-%20Anna%20and%20the%20Valentine's%20Day%20Gift/solution.txt) |
 | 2185C | [Shifted MEX](https://codeforces.com/contest/2185/problem/C) | 900 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/C%20-%20Shifted%20MEX/solution.txt) |
+| 2242A | [Bigrams](https://codeforces.com/contest/2242/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2242/A%20-%20Bigrams/solution.txt) |
+| 2244B | [Nikita and Books](https://codeforces.com/contest/2244/problem/B) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/B%20-%20Nikita%20and%20Books/solution.txt) |
+| 2244C | [Stepan and Permutation](https://codeforces.com/contest/2244/problem/C) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/C%20-%20Stepan%20and%20Permutation/solution.txt) |
 
 ### strings
 
@@ -227,6 +258,8 @@
 | 676C | [Vasya and String](https://codeforces.com/contest/676/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/676/C%20-%20Vasya%20and%20String/solution.txt) |
 | 701C | [They Are Everywhere](https://codeforces.com/contest/701/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/701/C%20-%20They%20Are%20Everywhere/solution.txt) |
 | 2236B | [Tatar TV Show](https://codeforces.com/contest/2236/problem/B) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/B%20-%20Tatar%20TV%20Show/solution.txt) |
+| 2242A | [Bigrams](https://codeforces.com/contest/2242/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2242/A%20-%20Bigrams/solution.txt) |
+| 2244A | [Iskander and Drawings](https://codeforces.com/contest/2244/problem/A) | Unrated | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2244/A%20-%20Iskander%20and%20Drawings/solution.txt) |
 
 ### two pointers
 
