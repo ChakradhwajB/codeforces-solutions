@@ -1,0 +1,6 @@
+t = int(input())
+for i in range(t):
+    x = int(input())
+    nums = [int(x) for x in input().strip().split()]
+    print(max(nums)*len(nums))
+    
