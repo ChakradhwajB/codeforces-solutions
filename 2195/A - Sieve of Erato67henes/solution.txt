@@ -1,0 +1,12 @@
+#11 17
+ 
+ 
+t = int(input().strip())
+ 
+for i in range(t):
+    n = int(input())
+    arr = [int(x) for x in input().split()]
+    if 67 in arr:
+        print("YES")
+    else:
+        print("NO")
