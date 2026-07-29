@@ -1,0 +1,33 @@
+import sys
+input = sys.stdin.readline
+ 
+t = int(input().strip())
+ 
+def zero_sort(num):
+    s = str(num)
+    return len(s) - len(s.rstrip('0'))
+ 
+for i in range(t):
+    n,k = map(int,input().split())
+    arr = [int(x) for x in input().split()]
+    pairs = [(num, zero_sort(num)) for num in arr]
+    pairs.sort(key=lambda x: x[1], reverse = True)
+    #Total achievable digits
+ 
+ 
+    max_digits = len("".join(map(str, arr)))
+    flipper = 1
+    for num,zeroes in pairs:
+        #Annies role
+        if flipper == 1:
+            max_digits -= zeroes
+            flipper *= -1
+        elif flipper == -1:
+            flipper *= -1
+ 
+ 
+    if max_digits >= k+1:
+        print("Sasha")
+    else:
+        print("Anna")
+ 
