@@ -1,0 +1,27 @@
+import sys
+input = sys.stdin.readline
+ 
+ 
+n,t = map(int, input().split())
+arr = [int(x) for x in input().split()]
+ 
+ 
+ 
+ 
+L = 0
+current_sum = 0
+max_window_size = 0
+ 
+for R in range(len(arr)):
+ 
+    current_sum += arr[R]
+    
+ 
+    while current_sum > t:
+        current_sum -= arr[L]
+        L += 1
+    
+ 
+    max_window_size = max(max_window_size, R - L + 1)
+ 
+print(max_window_size)
