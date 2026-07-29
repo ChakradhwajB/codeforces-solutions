@@ -1,0 +1,8 @@
+# Source: https://usaco.guide/general/io
+import math
+ 
+ 
+n,m,a = map(int, input().split())
+ 
+result = math.ceil(m / a) * math.ceil(n / a)
+print(result)
