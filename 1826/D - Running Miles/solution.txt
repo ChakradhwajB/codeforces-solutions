@@ -1,0 +1,34 @@
+import sys
+input = sys.stdin.readline
+ 
+t = int(input().strip())
+ 
+for _ in range(t):
+    n = int(input().strip())
+    arr = [int(x) for x in input().split()]
+ 
+    #Let pref[i] be maximum bl+l vals
+    pref = [0]*(n+1)
+    for i in range(n):
+        prev_max = pref[i]
+        if arr[i] + i + 1> prev_max:
+            pref[i+1] = arr[i] + i + 1
+        else:
+            pref[i+1] = prev_max
+ 
+    #let suff[i] be be maximum br-r vals
+    suff = [0] * n
+ 
+    suff[-1] = arr[-1] - n
+ 
+    for i in range(n - 2, -1, -1):
+        current_val = arr[i] - (i + 1)
+        suff[i] = max(current_val, suff[i + 1])
+    maximum = float('-inf')
+    
+    for j in range(n):
+        if j == 0 or j == n-1:
+            pass
+        else:
+            maximum = max(maximum, arr[j] + pref[j] + suff[j+1])
+    print(maximum)
