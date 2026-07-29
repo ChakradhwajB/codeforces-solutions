@@ -1,0 +1,25 @@
+import sys
+input = sys.stdin.readline
+ 
+ 
+n = int(input().strip())
+arr = [int(x) for x in input().split()]
+ 
+ 
+ 
+L = 0
+R = n - 1
+left_sum = 0
+right_sum = 0
+count = 0
+while L <= R:
+    if left_sum + arr[L] <= right_sum + arr[R]:
+        count += 1
+        left_sum += arr[L]
+        L += 1
+ 
+    elif left_sum + arr[L] > right_sum + arr[R]:
+        right_sum += arr[R]
+        R -= 1
+ 
+print(count,n-count)
