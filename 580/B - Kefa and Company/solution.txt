@@ -1,0 +1,26 @@
+import sys
+input = sys.stdin.readline
+ 
+ 
+n,d = map(int, input().split())
+arr = [[int(x) for x in input().split()] for _ in range(n)] #N is the amount of lines in the input
+arr.sort()
+ 
+ 
+ 
+L = 0
+current_sum = 0
+max_sum = 0
+ 
+for R in range(n):
+    # Expand window: add the element at R
+    current_sum += arr[R][1]
+    
+    # Shrink window: while condition is violated, move L forward
+    while arr[R][0]-arr[L][0]>=d:
+        current_sum -= arr[L][1]
+        L += 1
+    
+    # Window [L, R] is now valid; update your answer
+    max_sum = max(max_sum,current_sum)
+print(max_sum)
