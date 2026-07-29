@@ -1,0 +1,34 @@
+#Create a prefix_start and prefix_end
+ 
+#Prefix_start is the amount of matches
+ 
+#Prefix end is the same as prefix_start but incremented by 1 to inlclude
+#The start of a matching sequence
+ 
+arr = list(input())
+n = int(input())
+ 
+# Assuming 'arr' is your input list of size N
+# Create prefix sum array 'pref' of size N + 1
+pref_start = [0] * (len(arr) + 1)
+pref_bottom = [0] * (len(arr) + 1)
+ 
+for i in range(len(arr)):
+    if i != 0 and arr[i] == arr[i-1]:
+        j=1
+        
+    else:
+        j=0
+    pref_start[i + 1] = pref_start[i] + j
+    pref_bottom[i + 1] = pref_bottom[i] + j
+ 
+for i in range(len(arr)):
+    if i != 0 and arr[i] == arr[i-1]:
+        pref_bottom[i]+=1
+    
+ 
+for i in range(n):
+    L,R = map(int, input().split())
+    range_sum = pref_start[R] - pref_bottom[L - 1]
+    print(range_sum)
+ 
