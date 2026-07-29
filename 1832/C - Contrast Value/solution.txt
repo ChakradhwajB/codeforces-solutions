@@ -1,0 +1,50 @@
+# Source: https://usaco.guide/general/io
+import math
+t = int(input())
+ 
+for _ in range(t):
+    i = 0
+    n = int(input())
+    raw_seq = [int(x) for x in input().split()]
+    
+    seq = [raw_seq[0]]
+    for j in range(1, n):
+        if raw_seq[j] != seq[-1]:
+            seq.append(raw_seq[j])
+    n = len(seq)
+    final_seq = [seq[0]]
+ 
+ 
+    while i < n - 1:
+        if seq[i+1] >= seq[i]:
+            while i < n - 1 and seq[i+1] >= seq[i]:
+                i += 1
+            final_seq.append(seq[i])  
+            
+        else:
+            while i < n - 1 and seq[i+1] <= seq[i]:
+                i += 1
+            final_seq.append(seq[i])
+ 
+    all_same = len(set(final_seq)) <= 1
+    if all_same:
+        print(1)
+    else:
+        print(len(final_seq))
+ 
+ 
+ 
+#On any sequence a,b,c,d,....z where it is in non increasing order, then
+#The array is defined as a-b + b-c ... x-z -> a-z
+#Essentialy, in an increasing subsequence form a to z, all integers 
+#Other than a to z can be removed
+ 
+#applying this to a,b,c,d ... z where it is non decreasing,
+#the arr is (-a+b) + (-b+c)...(-x+z) -> -a+z. same follows as above.
+ 
+#Edge cases: all numers equal each other -> only case where 1 is the answer
+ 
+ 
+ 
+ 
+ 
