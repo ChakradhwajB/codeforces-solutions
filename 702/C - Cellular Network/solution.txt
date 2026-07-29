@@ -1,0 +1,65 @@
+import sys
+input = sys.stdin.readline
+ 
+n,q = map(int,input().split())
+cities = [int(x) for x in input().split()]
+towers = [int(x) for x in input().split()]
+cities.sort()
+towers.sort()
+ 
+ 
+#Binary search algorithm
+#let low be the lowest r value
+#let high be the highest r value
+#lowest r value can be 0
+#Highest r value can be max(cities) - min(towers)
+#Calculate middle
+#Now perform a check to see if this r value works or not
+#If it works, eliminate anything higher than it
+#If it doesn't, eliminate everything lower and itself.
+ 
+#Check logic:
+#Lets check if r works
+#1 5 10 14 17
+#4 11 15
+#For towers: lowest number + r, lowest number -r. If cities[0]  the lowest of cities is higher than lowest of
+#towers-r,It doesnt work.
+ 
+ 
+#Implement a 2 pointer-technique.
+#Let top = 0 and bottom = 0
+ 
+#UPDATING LOGIC:
+#Minimum r MUST be abs(max(towers[0] - cities[0],towers[-1]-cities[-1]))
+ 
+#look ahead. If cities[top+1] <= r+towers[bottom], then it works. For loop this and check untill it breaks
+#Then let the bottom pointer increase by one. Check if cities[top] 
+ 
+ 
+ 
+def rCheck(r, arrTop, arrBot, lenTop, lenBot):
+    top=0
+   
+    for i in range(lenBot):
+        while top < lenTop and arrBot[i] - r <= arrTop[top] <= arrBot[i] + r:
+            top += 1 
+    if top == lenTop:
+        return True
+    else:
+        return False
+ 
+ 
+ 
+low = 0
+high = 2* 10**9
+ 
+while low<high:
+    mid = (low+high)//2
+    
+    if rCheck(mid, cities, towers, n, q) != False:
+        high = mid
+ 
+    else:
+        low = mid+1
+ 
+print(low)
