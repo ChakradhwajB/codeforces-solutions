@@ -1,0 +1,26 @@
+n = int(input())
+ 
+arr = [int(x) for x in input().split()]
+m = int(input())
+arr_sorted = sorted(arr)
+ 
+ 
+pref = [0] * (len(arr) + 1)
+pref_sorted = [0] * (len(arr) + 1)
+ 
+ 
+for i in range(len(arr)):
+    pref[i + 1] = pref[i] + arr[i]
+ 
+for i in range(len(arr)):
+    pref_sorted[i + 1] = pref_sorted[i] + arr_sorted[i]
+ 
+#range_sum = pref[R] - pref[L - 1]
+ 
+for i in range(m):
+    t,L,R = map(int, input().split())
+    if t == 1:
+        print(pref[R] - pref[L - 1])
+    else:
+        print(pref_sorted[R] - pref_sorted[L - 1])
+ 
