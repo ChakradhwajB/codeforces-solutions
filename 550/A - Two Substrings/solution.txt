@@ -1,0 +1,39 @@
+arr = input().strip()
+ab_index = []
+ba_index = []
+ 
+for i in range(len(arr)-1):
+    if arr[i] == 'A' and arr[i+1] == 'B':
+        ab_index.append([i,i+1])
+    if arr[i] == 'B' and arr[i+1] == 'A':
+        ba_index.append([i,i+1])
+ 
+ 
+ 
+def solve():
+    if ab_index and ba_index:
+        least_ab = ab_index[0]
+        
+        most_ba = ba_index[-1]
+        if least_ab[0]<most_ba[0]:
+            if least_ab[1] != most_ba[0]:
+                return True
+        else:
+            if least_ab[0] != most_ba[1]:
+                return True
+        least_ab = ab_index[-1]
+        most_ba = ba_index[0]
+        if least_ab[0]<most_ba[0]:
+            if least_ab[1] != most_ba[0]:
+                return True
+        else:
+            if least_ab[0] != most_ba[1]:
+                return True
+    else:
+        return False
+    return False
+ 
+if solve() == True:
+    print('YES')
+else:
+    print('NO')
