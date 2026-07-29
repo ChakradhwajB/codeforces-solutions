@@ -1,0 +1,20 @@
+import sys
+input = sys.stdin.readline
+ 
+t = int(input().strip())
+ 
+for i in range(t):
+    k = int(input().strip())
+    arr = [int(x) for x in input().split()]
+    counter_two = 0
+    big_count = 0
+    for i in arr:
+        if i== 2:
+            counter_two += 1
+        elif i > 2:
+            big_count += 1
+        
+    if counter_two>=2 or big_count >= 1:
+        print("YES")
+    else:
+        print("NO")
