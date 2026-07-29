@@ -1,0 +1,70 @@
+#C2. Seating Arrangement (Hard Version)
+#Problem. You are given a string of personalities:
+#I requires an empty table to be seated
+#E requires a table with a person that is not already full
+#A has no requirements.
+ 
+#Greedy w regret:
+#always place an I if possible. It is necessary for an E.
+#always fill up tables with E's
+#A's are tricky. Prioritize treating them as E's, adding them to tables.
+#If you ever have an E that requires a new table after an A is placed at a table, 
+#Make the a go to the new table.
+ 
+t = int(input().strip())
+for i in range(t):
+    n,x,s = map(int, input().split())
+    arr = [x for x in input().strip()]
+    chairs = [0]*x
+    j = 0
+    introvert_count = 0
+    seated = 0
+    ambivert_count = 0
+    for i in range(n):
+        if arr[i] == 'I':
+            introvert_count +=1
+        if arr[i] == 'E':
+            if chairs[j] != 0 and chairs[j] < s:
+                chairs[j] += 1
+                seated += 1
+                if chairs[j] == s and j<x-1:
+                    j+=1
+            elif chairs[j] == 0 and introvert_count != 0 and s>1:
+                introvert_count -= 1
+                chairs[j] += 2
+                seated += 2
+                if chairs[j] == s and j<x-1:
+                    j+=1
+            elif chairs[j] == 0 and ambivert_count != 0:
+                ambivert_count -= 1
+                chairs[j] += 1
+                seated += 1
+                if chairs[j] == s and j<x-1:
+                    j+=1
+        if arr[i] == 'A':
+            if chairs[j] != 0 and chairs[j] < s:
+                chairs[j] += 1
+                seated += 1
+                if chairs[j] == s and j<x-1:
+                    j+=1
+                ambivert_count += 1
+            elif chairs[j] == 0:
+                if introvert_count != 0 and s>1:
+                    introvert_count -= 1
+                    chairs[j] += 2
+                    seated += 2
+                    if chairs[j] == s and j<x-1:
+                        j+=1
+                    ambivert_count += 1      
+                else:
+                    chairs[j] += 1
+                    seated += 1
+                    if chairs[j] == s and j<x-1:
+                        j+=1
+    while introvert_count != 0 and j<x:
+        if chairs[j] == 0:
+            introvert_count-=1
+            seated+=1
+        j+=1
+    print(seated)
+    
