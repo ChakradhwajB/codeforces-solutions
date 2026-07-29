@@ -1,0 +1,22 @@
+# Source: https://usaco.guide/general/io
+ 
+t = int(input().strip())
+ 
+for i in range(t):
+    
+    def solve():
+        n = int(input())
+        if n == 1:
+            return 1
+        if n== 2:
+            return -1
+        res = [1,2,3]
+        while(len(res))<n:
+            res.append(res[-1]*2)
+        return res
+    z = solve(
+    )
+    if z == -1 or z == 1:
+        print(z)
+    else:
+        print(*z)
