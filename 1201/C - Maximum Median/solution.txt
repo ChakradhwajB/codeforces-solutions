@@ -1,0 +1,54 @@
+ 
+import bisect
+import sys
+ 
+ 
+input = sys.stdin.readline
+ 
+ 
+n,k = map(int, input().split())
+ 
+arr = [int(x) for x in input().split()] 
+arr.sort()
+mid_val = n//2
+median = arr[n// 2]
+ 
+ 
+# The bounds of your search space.
+# High should be an impossibly large valid answer (e.g., 10**18)
+low = 0
+high = 10**18
+best_ans = 0
+ 
+def check(mid):
+    counter = 0
+    i = mid_val
+    while i < n:
+        if arr[i] > mid:
+            pass
+        else:
+            if counter + mid-arr[i] <= k:
+ 
+                counter += mid-arr[i]
+            else:
+                return False
+        i+=1
+    return True
+            
+        
+ 
+while low <= high:
+    mid = (low + high) // 2
+    
+    if check(mid):
+ 
+        best_ans = mid
+ 
+        low = mid + 1
+        
+    else:
+       
+        high = mid - 1
+ 
+ 
+print(high)
