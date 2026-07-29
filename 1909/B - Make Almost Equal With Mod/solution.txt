@@ -1,0 +1,22 @@
+# Source: https://usaco.guide/general/io
+from functools import reduce
+t = int(input())
+ 
+for i in range(t):
+    k = 2
+    n = int(input())
+    arr = [int(x) for x in input().split()]
+    while True:
+            
+        remainders = set(x % k for x in arr)
+            
+        if len(remainders) == 2:
+            print(k)
+            break
+                
+        k *= 2
+ 
+ 
+    
+ 
+ 
