@@ -1,0 +1,64 @@
+ 
+ 
+ 
+"""
+final_arr = []
+for i in arr:
+    if set(final_arr) != arr_set:
+        final_arr.append(i)
+    else:
+        break
+ 
+while len(final_arr) > 0 and set(final_arr[1:]) == arr_set:
+    final_arr.pop(0)
+ 
+print(len(final_arr))
+"""
+ 
+ 
+import sys
+from collections import defaultdict
+ 
+input = sys.stdin.readline
+ 
+# 1. Setup
+n = int(input().strip())
+# We don't even need list(), strings can be indexed directly
+arr = input().strip() 
+unique_target = len(set(arr))
+ 
+frequency_map = defaultdict(int)
+ 
+L = 0
+min_window_size = float('inf')
+unique_count = 0
+ 
+for R in range(len(arr)):
+    
+    char_R = arr[R]
+    
+    
+    if frequency_map[char_R] == 0:
+        unique_count += 1
+        
+   
+    frequency_map[char_R] += 1
+ 
+    
+    while unique_count == unique_target:
+        
+        min_window_size = min(min_window_size, R - L + 1)
+        
+       
+        char_L = arr[L]
+        frequency_map[char_L] -= 1
+        
+        
+        if frequency_map[char_L] == 0:
+            unique_count -= 1
+            
+        
+        L += 1
+ 
+print(min_window_size)
+ 
