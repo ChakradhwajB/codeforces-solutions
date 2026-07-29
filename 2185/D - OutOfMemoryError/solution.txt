@@ -1,0 +1,55 @@
+import sys
+ 
+def solve():
+    # Use fast I/O
+    input_data = sys.stdin.read().split()
+    if not input_data:
+        return
+    
+    ptr = 0
+    t = int(input_data[ptr])
+    ptr += 1
+    
+    results = []
+    
+    for _ in range(t):
+        n = int(input_data[ptr])
+        m = int(input_data[ptr+1])
+        h = int(input_data[ptr+2])
+        ptr += 3
+        
+        # original_a stores the base values
+        original_a = [int(x) for x in input_data[ptr : ptr + n]]
+        ptr += n
+        
+        # added[i] stores how much has been added since the last crash
+        added = [0] * n
+        # dirty stores which indices have a non-zero value in 'added'
+        dirty = []
+        
+        for _ in range(m):
+            b = int(input_data[ptr]) - 1
+            c = int(input_data[ptr+1])
+            ptr += 2
+            
+            # Check if this operation causes a crash
+            if original_a[b] + added[b] + c > h:
+                # CRASH: Reset only the modified elements
+                for idx in dirty:
+                    added[idx] = 0
+                dirty = [] # Clear the list of modified indices
+            else:
+                # Normal operation
+                added[b] += c
+                dirty.append(b)
+        
+        # Construct the final array
+        final_arr = [original_a[i] + added[i] for i in range(n)]
+        results.append(" ".join(map(str, final_arr)))
+        
+    sys.stdout.write("
+".join(results) + "
+")
+ 
+if __name__ == "__main__":
+    solve()
