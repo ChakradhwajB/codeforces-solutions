@@ -1,0 +1,27 @@
+import bisect
+ 
+t = int(input().strip())
+ 
+for i in range(t):
+    n,q = map(int,input().split())
+    arr = [int(x) for x in input().split()]
+    
+    
+    pref = []
+    requests = [int(x) for x in input().split()]
+    answer = []
+    pref = [0] * (len(arr) + 1)
+    max_arr = []
+    curr_max = 0
+    for i in range(n):
+        pref[i + 1] = pref[i] + arr[i]
+    for i in arr:
+        curr_max = max(i,curr_max)
+        max_arr.append(curr_max)
+ 
+    for i in requests:
+        x = bisect.bisect_right(max_arr,i)
+        answer.append(pref[x])
+    
+    print(*answer)
+    
