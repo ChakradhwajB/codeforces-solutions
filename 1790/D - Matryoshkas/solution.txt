@@ -1,0 +1,24 @@
+import sys
+from collections import Counter
+input = sys.stdin.readline
+ 
+t = int(input().strip())
+ 
+for i in range(t):
+    n = int(input().strip())
+    arr = [int(x) for x in input().split()]
+    arr.sort()
+    frequency = Counter(arr)
+    freq_map = dict(frequency)
+    keys = list(freq_map)
+    values = list(freq_map.values())
+ 
+    count = 0
+    count += values[0]
+    for i in range(len(keys)-1):
+        if keys[i+1] == keys[i] + 1:
+            if values[i+1]>values[i]:
+                count += values[i+1]-values[i]
+        else:
+            count += values[i+1]
+    print(count)
