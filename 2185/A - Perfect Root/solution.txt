@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    x = int(input())
+    z = []
+    for j in range(x):
+        z.append(j+1)
+    print(*z)
