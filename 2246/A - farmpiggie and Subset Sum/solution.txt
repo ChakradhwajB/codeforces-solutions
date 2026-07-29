@@ -1,0 +1,18 @@
+# Source: https://usaco.guide/general/io
+ 
+t = int(input().strip())
+ 
+for i in range(t):
+    n = int(input())
+    odd = [(x*2)+1 for x in range(n//2)]
+    even = [(x*2)+2 for x in range(n//2)]
+    res = []
+    for i in range(n):
+        if i%2 == 1:
+            res.append(odd[-1])
+            odd.pop()
+        else:
+            res.append(even[-1])
+            even.pop()
+    print(*res)
+    
