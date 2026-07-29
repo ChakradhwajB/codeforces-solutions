@@ -1,0 +1,91 @@
+ 
+ 
+import sys
+ 
+ 
+input = sys.stdin.readline
+ 
+ 
+n,max_changes = map(int, input().split())
+ 
+arr = input().strip() 
+ 
+ 
+#A
+L = 0
+current_sum = 0
+current_changes=0
+max_sum = 0
+ 
+for R in range(len(arr)):
+    # Expand window: add the element at R
+    cur_val = arr[R]
+    if cur_val == 'a':
+ 
+        current_sum += 1
+        max_sum = max(max_sum, current_sum)
+    else:
+        if current_changes < max_changes:
+            current_sum +=1
+            current_changes +=1
+            max_sum = max(max_sum, current_sum)
+        else:
+    
+    # Shrink window: while condition is violated, move L forward
+            while arr[L] != 'b':
+                current_sum -= 1
+                L += 1
+            
+            L +=1
+            
+            
+    
+   
+            max_sum = max(max_sum, current_sum)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+#B
+L = 0
+current_sum = 0
+current_changes=0
+max_sum_b = 0
+ 
+for R in range(len(arr)):
+    # Expand window: add the element at R
+    
+    cur_val = arr[R]
+    if cur_val == 'b':
+ 
+        current_sum += 1
+        max_sum_b = max(max_sum_b, current_sum)
+        
+    else:
+        if current_changes < max_changes:
+            current_sum +=1
+            current_changes +=1
+            max_sum_b = max(max_sum_b, current_sum)
+            
+        else:
+    
+    # Shrink window: while condition is violated, move L forward
+            while arr[L] != 'a':
+                current_sum -= 1
+                L += 1
+            
+            L +=1
+            
+            
+            
+    
+   
+            max_sum_b = max(max_sum_b, current_sum)
+    
+ 
+ 
+print(max(max_sum,max_sum_b))
+ 
