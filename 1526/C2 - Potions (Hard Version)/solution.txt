@@ -1,0 +1,45 @@
+ 
+ 
+import sys
+import heapq
+ 
+input = sys.stdin.readline
+ 
+ 
+ 
+ 
+n=int(input().strip())
+ 
+arr = [int(x) for x in input().split()] 
+ 
+ 
+neg_arr = []
+potions = 0
+total = 0
+for i in range(n):
+    if arr[i] >= 0:
+        potions+=1
+        total += arr[i]
+    else:
+        if total + arr[i] >= 0:
+            potions +=1
+            total += arr[i]
+            heapq.heappush(neg_arr,arr[i])
+        else:
+            if neg_arr:
+                if arr[i] > neg_arr[0]:
+                    val = heapq.heappop(neg_arr)
+                    total -= val
+                    total += arr[i]
+                    heapq.heappush(neg_arr, arr[i]) 
+                else:
+                    pass
+            else:
+                pass
+ 
+print(potions)
+#Greedy with sorta looking back ig
+#if our val is positive, add it
+#if its negative AND adding it doesnt make us go below zero, add it
+#If we ever encounter another negative that makes us go below zero, check if 
+#A negative we added before is worse and we instead add that back and subtract this
