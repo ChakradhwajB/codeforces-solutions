@@ -6,24 +6,28 @@
 
 | Total Problems | Topics |
 |---|---|
-| 15 | 12 |
+| 29 | 16 |
 
 ---
 
 ## 📂 Topic-Wise Problems
 
-- [binary search](#binary-search) (5)
-- [brute force](#brute-force) (1)
-- [constructive algorithms](#constructive-algorithms) (1)
-- [data structures](#data-structures) (2)
-- [dp](#dp) (3)
+- [binary search](#binary-search) (10)
+- [brute force](#brute-force) (2)
+- [constructive algorithms](#constructive-algorithms) (3)
+- [data structures](#data-structures) (4)
+- [dfs and similar](#dfs-and-similar) (2)
+- [dp](#dp) (5)
+- [dsu](#dsu) (1)
 - [geometry](#geometry) (1)
-- [greedy](#greedy) (4)
-- [implementation](#implementation) (7)
-- [math](#math) (3)
-- [sortings](#sortings) (4)
-- [strings](#strings) (2)
-- [two pointers](#two-pointers) (7)
+- [graphs](#graphs) (1)
+- [greedy](#greedy) (13)
+- [implementation](#implementation) (10)
+- [math](#math) (11)
+- [number theory](#number-theory) (1)
+- [sortings](#sortings) (5)
+- [strings](#strings) (4)
+- [two pointers](#two-pointers) (9)
 
 ---
 
@@ -32,29 +36,46 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/279/B%20-%20Books/solution.txt) |
+| 474B | [Worms](https://codeforces.com/contest/474/problem/B) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/474/B%20-%20Worms/solution.txt) |
 | 580B | [Kefa and Company](https://codeforces.com/contest/580/problem/B) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/580/B%20-%20Kefa%20and%20Company/solution.txt) |
+| 670D2 | [Magic Powder - 2](https://codeforces.com/contest/670/problem/D2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/670/D2%20-%20Magic%20Powder%20-%202/solution.txt) |
 | 676C | [Vasya and String](https://codeforces.com/contest/676/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/676/C%20-%20Vasya%20and%20String/solution.txt) |
 | 701C | [They Are Everywhere](https://codeforces.com/contest/701/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/701/C%20-%20They%20Are%20Everywhere/solution.txt) |
 | 702C | [Cellular Network](https://codeforces.com/contest/702/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/702/C%20-%20Cellular%20Network/solution.txt) |
+| 1201C | [Maximum Median](https://codeforces.com/contest/1201/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1201/C%20-%20Maximum%20Median/solution.txt) |
+| 2226C | [Mental Monumental (Easy Version)](https://codeforces.com/contest/2226/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2226/C%20-%20Mental%20Monumental%20(Easy%20Version)/solution.txt) |
+| 2232C2 | [Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2232/C2%20-%20Seating%20Arrangement%20(Hard%20Version)/solution.txt) |
 
 ### brute force
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/279/B%20-%20Books/solution.txt) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.txt) |
 
 ### constructive algorithms
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1846D | [Rudolph and Christmas Tree](https://codeforces.com/contest/1846/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1846/D%20-%20Rudolph%20and%20Christmas%20Tree/solution.txt) |
+| 2185A | [Perfect Root](https://codeforces.com/contest/2185/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/A%20-%20Perfect%20Root/solution.txt) |
+| 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.txt) |
 
 ### data structures
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 276C | [Little Girl and Maximum Sum](https://codeforces.com/contest/276/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/276/C%20-%20Little%20Girl%20and%20Maximum%20Sum/solution.txt) |
+| 1526C2 | [Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | 1600 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1526/C2%20-%20Potions%20(Hard%20Version)/solution.txt) |
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.txt) |
+| 2226C | [Mental Monumental (Easy Version)](https://codeforces.com/contest/2226/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2226/C%20-%20Mental%20Monumental%20(Easy%20Version)/solution.txt) |
+
+### dfs and similar
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1167C | [News Distribution](https://codeforces.com/contest/1167/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1167/C%20-%20News%20Distribution/solution.txt) |
+| 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.txt) |
 
 ### dp
 
@@ -62,7 +83,15 @@
 |---|---------|------------|----------|
 | 313B | [Ilya and Queries](https://codeforces.com/contest/313/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/313/B%20-%20Ilya%20and%20Queries/solution.txt) |
 | 433B | [Kuriyama Mirai's Stones](https://codeforces.com/contest/433/problem/B) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/433/B%20-%20Kuriyama%20Mirai's%20Stones/solution.txt) |
+| 545C | [Woodcutters](https://codeforces.com/contest/545/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/545/C%20-%20Woodcutters/solution.txt) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.txt) |
 | 676C | [Vasya and String](https://codeforces.com/contest/676/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/676/C%20-%20Vasya%20and%20String/solution.txt) |
+
+### dsu
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1167C | [News Distribution](https://codeforces.com/contest/1167/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1167/C%20-%20News%20Distribution/solution.txt) |
 
 ### geometry
 
@@ -70,14 +99,29 @@
 |---|---------|------------|----------|
 | 1846D | [Rudolph and Christmas Tree](https://codeforces.com/contest/1846/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1846/D%20-%20Rudolph%20and%20Christmas%20Tree/solution.txt) |
 
+### graphs
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 1167C | [News Distribution](https://codeforces.com/contest/1167/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1167/C%20-%20News%20Distribution/solution.txt) |
+
 ### greedy
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 6C | [Alice, Bob and Chocolate](https://codeforces.com/contest/6/problem/C) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/6/C%20-%20Alice%2C%20Bob%20and%20Chocolate/solution.txt) |
 | 276C | [Little Girl and Maximum Sum](https://codeforces.com/contest/276/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/276/C%20-%20Little%20Girl%20and%20Maximum%20Sum/solution.txt) |
+| 545C | [Woodcutters](https://codeforces.com/contest/545/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/545/C%20-%20Woodcutters/solution.txt) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.txt) |
+| 1201C | [Maximum Median](https://codeforces.com/contest/1201/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1201/C%20-%20Maximum%20Median/solution.txt) |
+| 1526C2 | [Potions (Hard Version)](https://codeforces.com/contest/1526/problem/C2) | 1600 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1526/C2%20-%20Potions%20(Hard%20Version)/solution.txt) |
 | 2185B | [Prefix Max](https://codeforces.com/contest/2185/problem/B) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/B%20-%20Prefix%20Max/solution.txt) |
+| 2226C | [Mental Monumental (Easy Version)](https://codeforces.com/contest/2226/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2226/C%20-%20Mental%20Monumental%20(Easy%20Version)/solution.txt) |
 | 2227B | [Party Monster](https://codeforces.com/contest/2227/problem/B) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2227/B%20-%20Party%20Monster/solution.txt) |
+| 2232C2 | [Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2232/C2%20-%20Seating%20Arrangement%20(Hard%20Version)/solution.txt) |
+| 2236A | [Games on the Train](https://codeforces.com/contest/2236/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/A%20-%20Games%20on%20the%20Train/solution.txt) |
+| 2236B | [Tatar TV Show](https://codeforces.com/contest/2236/problem/B) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/B%20-%20Tatar%20TV%20Show/solution.txt) |
+| 2241A | [Divide and Conquer](https://codeforces.com/contest/2241/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/A%20-%20Divide%20and%20Conquer/solution.txt) |
 
 ### implementation
 
@@ -87,6 +131,9 @@
 | 279B | [Books](https://codeforces.com/contest/279/problem/B) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/279/B%20-%20Books/solution.txt) |
 | 313B | [Ilya and Queries](https://codeforces.com/contest/313/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/313/B%20-%20Ilya%20and%20Queries/solution.txt) |
 | 433B | [Kuriyama Mirai's Stones](https://codeforces.com/contest/433/problem/B) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/433/B%20-%20Kuriyama%20Mirai's%20Stones/solution.txt) |
+| 474B | [Worms](https://codeforces.com/contest/474/problem/B) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/474/B%20-%20Worms/solution.txt) |
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.txt) |
+| 670D2 | [Magic Powder - 2](https://codeforces.com/contest/670/problem/D2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/670/D2%20-%20Magic%20Powder%20-%202/solution.txt) |
 | 702C | [Cellular Network](https://codeforces.com/contest/702/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/702/C%20-%20Cellular%20Network/solution.txt) |
 | 2185C | [Shifted MEX](https://codeforces.com/contest/2185/problem/C) | 900 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/C%20-%20Shifted%20MEX/solution.txt) |
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.txt) |
@@ -96,8 +143,22 @@
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
 | 1A | [Theatre Square](https://codeforces.com/contest/1/problem/A) | 1000 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1/A%20-%20Theatre%20Square/solution.txt) |
+| 1201C | [Maximum Median](https://codeforces.com/contest/1201/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1201/C%20-%20Maximum%20Median/solution.txt) |
 | 1846D | [Rudolph and Christmas Tree](https://codeforces.com/contest/1846/problem/D) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1846/D%20-%20Rudolph%20and%20Christmas%20Tree/solution.txt) |
+| 2185A | [Perfect Root](https://codeforces.com/contest/2185/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/A%20-%20Perfect%20Root/solution.txt) |
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.txt) |
+| 2226C | [Mental Monumental (Easy Version)](https://codeforces.com/contest/2226/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2226/C%20-%20Mental%20Monumental%20(Easy%20Version)/solution.txt) |
+| 2232C2 | [Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2232/C2%20-%20Seating%20Arrangement%20(Hard%20Version)/solution.txt) |
+| 2236A | [Games on the Train](https://codeforces.com/contest/2236/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/A%20-%20Games%20on%20the%20Train/solution.txt) |
+| 2236B | [Tatar TV Show](https://codeforces.com/contest/2236/problem/B) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/B%20-%20Tatar%20TV%20Show/solution.txt) |
+| 2241A | [Divide and Conquer](https://codeforces.com/contest/2241/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/A%20-%20Divide%20and%20Conquer/solution.txt) |
+| 2241B | [Good times Good times](https://codeforces.com/contest/2241/problem/B) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/B%20-%20Good%20times%20Good%20times/solution.txt) |
+
+### number theory
+
+| # | Problem | Difficulty | Solution |
+|---|---------|------------|----------|
+| 2241A | [Divide and Conquer](https://codeforces.com/contest/2241/problem/A) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2241/A%20-%20Divide%20and%20Conquer/solution.txt) |
 
 ### sortings
 
@@ -106,14 +167,17 @@
 | 276C | [Little Girl and Maximum Sum](https://codeforces.com/contest/276/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/276/C%20-%20Little%20Girl%20and%20Maximum%20Sum/solution.txt) |
 | 433B | [Kuriyama Mirai's Stones](https://codeforces.com/contest/433/problem/B) | 1200 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/433/B%20-%20Kuriyama%20Mirai's%20Stones/solution.txt) |
 | 580B | [Kefa and Company](https://codeforces.com/contest/580/problem/B) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/580/B%20-%20Kefa%20and%20Company/solution.txt) |
+| 1201C | [Maximum Median](https://codeforces.com/contest/1201/problem/C) | 1400 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/1201/C%20-%20Maximum%20Median/solution.txt) |
 | 2185C | [Shifted MEX](https://codeforces.com/contest/2185/problem/C) | 900 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/C%20-%20Shifted%20MEX/solution.txt) |
 
 ### strings
 
 | # | Problem | Difficulty | Solution |
 |---|---------|------------|----------|
+| 550A | [Two Substrings](https://codeforces.com/contest/550/problem/A) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/550/A%20-%20Two%20Substrings/solution.txt) |
 | 676C | [Vasya and String](https://codeforces.com/contest/676/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/676/C%20-%20Vasya%20and%20String/solution.txt) |
 | 701C | [They Are Everywhere](https://codeforces.com/contest/701/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/701/C%20-%20They%20Are%20Everywhere/solution.txt) |
+| 2236B | [Tatar TV Show](https://codeforces.com/contest/2236/problem/B) | 800 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2236/B%20-%20Tatar%20TV%20Show/solution.txt) |
 
 ### two pointers
 
@@ -126,6 +190,8 @@
 | 701C | [They Are Everywhere](https://codeforces.com/contest/701/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/701/C%20-%20They%20Are%20Everywhere/solution.txt) |
 | 702C | [Cellular Network](https://codeforces.com/contest/702/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/702/C%20-%20Cellular%20Network/solution.txt) |
 | 2185D | [OutOfMemoryError](https://codeforces.com/contest/2185/problem/D) | 1100 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2185/D%20-%20OutOfMemoryError/solution.txt) |
+| 2226C | [Mental Monumental (Easy Version)](https://codeforces.com/contest/2226/problem/C) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2226/C%20-%20Mental%20Monumental%20(Easy%20Version)/solution.txt) |
+| 2232C2 | [Seating Arrangement (Hard Version)](https://codeforces.com/contest/2232/problem/C2) | 1500 | [PyPy 3-64](https://github.com/ChakradhwajB/codeforces-solutions/blob/HEAD/2232/C2%20-%20Seating%20Arrangement%20(Hard%20Version)/solution.txt) |
 
 ---
 
