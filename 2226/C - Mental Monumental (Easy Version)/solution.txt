@@ -1,0 +1,128 @@
+#Let k and z be integers.
+#We want to know all vals of K mod z
+#Notice mod z can only return values between 0 and z-1
+#if z*2 > k, k mod z = k-z when k>z
+#Else, if z>k, k mod z = k
+ 
+#if k is even, z = k/2 + l if z*2 must be > k, where l>=1 and l<=k/2
+#so, k mod k/2 + l = k - (k/2 + l) = k/2-l. since l is inbetween 1 and k/2,
+#l must range from 0 to k/2 - 1.
+ 
+#Therefore, it is established that k mod z where k>=z yields values ranging from
+#0 to k/2 - 1
+ 
+#This can be extended to all integers to get the range between 0 to math.ciel(k/2) - 1
+#Case 2: z>k, k mod z = k. 
+ 
+#Final algorithm:
+#Let k and z be integers. 
+#k mod z will return either a number between 0 to math.ciel(k/2) - 1 
+#Or return k
+ 
+ 
+#given a list of numbers 1 3 4 6 7 8. 
+#Loop through it. maximum mex is equal to the length
+#let 3 become 0.
+#let 1 stay 1.
+#let 6 become 2.
+#let 7 become 3
+#let 4 stay 4
+#Mex = 5 since 8 cannot become a 5.
+ 
+#2 3 3 4 4 5 8 9 9
+#let 2 become 0
+#Let 3 become 1
+#Let 5 become 2
+#let 3 stay 3
+#Let 4 be 4
+#let 5 be 5
+#Mex = 6
+ 
+ 
+#BINARY SEARCH!!!
+ 
+ 
+# The bounds of your search space.
+# High should be an impossibly large valid answer (e.g., 10**18)
+ 
+ 
+ 
+ 
+import sys
+input = sys.stdin.readline
+ 
+ 
+ 
+t = int(input().strip())
+for _ in range(t):
+    n = int(input().strip())
+    arr = [int(x) for x in input().split()]
+    arr.sort()
+ 
+ 
+    
+    
+ 
+    #Check if a value mid is a possible mex
+    def check(mid):
+        have = [False] * (mid+1)
+        leftover = []
+        for i in arr:
+            if i<=mid and not have [i]:
+                have[i] = True
+            else:
+                leftover.append(i)
+        
+ 
+        required = {x for x in range(mid+1)}
+        needed = []
+        for i in required:
+            if have[i] == False:
+                needed.append(i)
+ 
+ 
+        if not needed:
+            return True
+        
+        if not leftover:
+            return False
+ 
+        if len(leftover) < len(needed):
+            return False
+ 
+ 
+ 
+        j = 0
+        for i in needed:
+            val = i*2 + 1
+            while j<len(leftover) and leftover[j] < val:
+                j+=1
+            if j >= len(leftover):
+                return False
+            j+=1
+        return True
+ 
+ 
+ 
+ 
+ 
+    low = 0
+    high = n
+    best_ans = 0
+    while low <= high:
+        mid = (low + high) // 2
+        
+        if check(mid):
+            # If mid works, it's a candidate! Save it.
+            best_ans = mid
+            # Now try to find an even BIGGER/BETTER answer
+            low = mid + 1
+            
+        else:
+            # If mid fails, it's too big. Go smaller.
+            high = mid - 1
+    print(best_ans+1)
+ 
+ 
+ 
+ 
