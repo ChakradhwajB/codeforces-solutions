@@ -1,0 +1,17 @@
+ 
+t = int(input())
+ 
+for i in range(t):
+    n,d,h = map(int, input().split())
+    heights = [int(x) for x in input().split()]
+    area = 0
+    for i in range(len(heights)-1):
+        if heights[i+1] - heights[i] < h:
+            height = heights[i+1] - heights[i]
+            shorterside = d * (h-height)/h
+            area += (shorterside + d)/2 * height
+ 
+        else:
+            area += h*d/2
+    area += d * h/2
+    print(area)
