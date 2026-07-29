@@ -1,0 +1,31 @@
+import math
+import collections
+t = int(input())
+ 
+for _ in range(t):
+ 
+    def solve():
+        n,x,y = map(int, input().split())
+ 
+        arr = [int(x) for x in input().split()]
+        unique_sorted = sorted(list(set(arr)))
+ 
+        mapping = dict(map(reversed, enumerate(unique_sorted)))
+        compressed_arr = list(map(mapping.get, arr))
+ 
+ 
+ 
+ 
+        for i in range(n):
+            destination = compressed_arr[i]-i
+            val = math.gcd(x,y)
+            if destination%val == 0:
+                pass
+            else:
+                return False
+        return True
+ 
+    if solve() == True:
+        print("YES")
+    else:
+        print("NO")
