@@ -1,0 +1,67 @@
+ 
+ 
+import sys
+ 
+ 
+input = sys.stdin.readline
+ 
+n=int(input().strip())
+ 
+arr = [[int(x) for x in input().split()] for _ in range(n)] 
+right_fells = []
+arr.sort()
+fells = 0
+#greedy logic
+#Favor left fells over right fells
+#First tree always can be felled to the left.
+#Last tree can always be felled to the right. 
+#Note both dont interfere with other fells
+ 
+#If a tree can be felled, it is always beneifical to do so. 
+ 
+ 
+ 
+def left_check(index):
+    if right_fells:
+ 
+        if arr[index][0] - arr[index][1] > arr[index-1][0] and arr[index][0] - arr[index][1] > right_fells[-1]:
+ 
+            return True
+        else:
+            return False
+ 
+    else:
+        if arr[index][0] - arr[index][1] > arr[index-1][0]:
+ 
+            return True
+        else:
+            return False
+ 
+#Left-fell Check:
+#Check if current val - hieght > curr-val - 1 or right endpoint of a right fell(if exists)
+ 
+ 
+def right_check(index):
+    if arr[index][0] + arr[index][1] < arr[index+1][0]:
+ 
+        right_fells.append(arr[index][0] + arr[index][1])
+        return True
+        
+    else:
+        return False
+        
+ 
+#Right fell check:
+#Since we iterate left-right, no interferences will exist other than still trees
+#If current_val + hieght < curr-val +1 , right fell is true
+for i in range(n):
+    if i == 0 or i == n-1:
+        fells += 1
+    else:
+        if left_check(i):
+            fells += 1
+        elif right_check(i):
+            fells += 1
+ 
+ 
+print(fells)
