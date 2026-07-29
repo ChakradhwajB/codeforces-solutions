@@ -1,0 +1,51 @@
+# Source: https://usaco.guide/general/io
+import math
+t = int(input())
+ 
+for _ in range(t):
+    def solve():
+        n = int(input())
+        arr = [int(x) for x in input().split()]
+        highest = n
+        lowest = 1
+ 
+        L = 0
+        R = len(arr) - 1
+        
+        while L < R:
+ 
+            if arr[L] == highest or arr[L] == lowest:
+                if arr[L] == highest:
+                    highest -= 1
+                    L+=1
+                elif arr[L] == lowest:
+                    lowest += 1
+                    L+=1
+            elif arr[R] == highest or arr[R] == lowest:
+                if arr[R] == highest:
+                    highest -= 1
+                    R-=1
+                elif arr[R] == lowest:
+                    lowest += 1
+                    R-=1
+            
+            else:
+                
+                return L+1,R+1
+        return False
+    val = solve()
+    if val == False:
+        print(-1)
+    else:
+        L,R = map(int, val)
+        print(L,R)
+            
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
