@@ -1,0 +1,28 @@
+# Source: https://usaco.guide/general/io
+import math
+t = int(input())
+ 
+for i in range(t):
+    n,x,y = map(int, input().split())
+    
+    #Alg must be o(1) or o(logn)
+    #Determine x,y collisions
+    collisions = n//math.lcm(x,y)
+    #Determiine amount of positions x can be placed into
+    x_placed = n//x
+    #Subtract collisions because they will default to a net delta 0
+    possible_x_placed = x_placed - collisions
+    #Maximize x placed
+    x_sum = (n*(n+1))//2 - ((n-possible_x_placed)*(n-possible_x_placed+1)//2)
+    #X-sum is net gain. we need to find net loss from remaining y
+    y_placed = n//y
+    possible_y_placed = y_placed - collisions
+    #Not too sure if this is true but we minimize yby adding 1,2.. until it works -> Edge case possibility
+    y_sum = (( y_placed - collisions) * ( y_placed - collisions+1))//2
+ 
+    print(x_sum - y_sum)
+    
+ 
+    
+ 
+ 
